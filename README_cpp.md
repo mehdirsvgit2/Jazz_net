@@ -21,7 +21,7 @@ public window_with_toolbar
 ```
 What problem can you see and what change would you make to address it?
 
-####Answer
+#### Answer
 The problem here is Diamond problem that is a result of multi-inheritance  multiple inheritance. Imagine that class 
 _window_ had a non-private property (e.g. _size_), then _window_with_menu_and_toolbar_ would not know to use the one 
 that is inherited in _window_with_toolbar_ or _window_with_menu_
@@ -53,7 +53,7 @@ public window_with_toolbar
 2. Implement a class with a member function 'int nobjs()' which returns the number of object
 of that class currently in existence. What assumptions have you made?
 
-####Answer
+#### Answer
 _Assumption_ The _++_ operation is NOT atomic so if we assume that there is no other thread accessing our class, This 
 code would be working correctly.
 codes are in cpp directory 
@@ -81,7 +81,7 @@ struct node_t* even_nodes(struct node_t**)
 which is passed a pointer to the head pointer of a list. It should remove all nodes with even
 values from the indicated list, putting them in a new list, which is returned.
 
-####Answer
+#### Answer
 Check 
 ```
 linked_list.cpp
